@@ -13,11 +13,14 @@ public class Meeting extends Task {
     public String getTopic() {
         return topic;
     }
+
     public String getProject() {
         return project;
     }
-    public String getStart(){
-        return start;}
+
+    public String getStart() {
+        return start;
+    }
 
     @Override
     public boolean matches(String query) {

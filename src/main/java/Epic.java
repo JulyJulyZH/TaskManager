@@ -1,14 +1,15 @@
 public class Epic extends Task {
-    protected String [] subtasks;
+    protected String[] subtasks;
 
-    public Epic(int id, String [] subtasks) {
+    public Epic(int id, String[] subtasks) {
         super(id);
         this.subtasks = subtasks;
     }
 
-    public String [] getSubtasks() {
+    public String[] getSubtasks() {
         return subtasks;
     }
+
     @Override
     public boolean matches(String query) {
         for (int i = 0; i < subtasks.length; i++) {
@@ -17,6 +18,6 @@ public class Epic extends Task {
                 return true;
             }
         }
-            return false;
-        }
+        return false;
     }
+}
